@@ -14,4 +14,6 @@ RUN npm install
 
 COPY . .
 
+RUN git clone https://github.com/Afx-Abu/bgms
+
 CMD ["node", "."]
