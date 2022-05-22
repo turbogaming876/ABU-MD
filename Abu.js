@@ -259,13 +259,13 @@ const reply = (teks) => {
         //auto reply by Abu 🦄
         for (let anji of setik){
 				if (budy === anji){
-					result = fs.readFileSync(`./AbuMedia/sticker/${anji}.webp`)
+					result = fs.readFileSync(`./bgm/sticker/${anji}.webp`)
 					AbuInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
 				if (budy === anju){
-					result = fs.readFileSync(`./AbuMedia/vn/${anju}.mp3`)
+					result = fs.readFileSync(`./bgms/uploads/${anju}.mp3`)
 					AbuInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
